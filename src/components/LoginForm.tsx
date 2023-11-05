@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Input, Button, FormLabel, Flex, Box, VStack, Tooltip } from '@chakra-ui/react';
+import { Input, Button, FormLabel, Box, Tooltip } from '@chakra-ui/react';
 
 type LoginFormProps = {
     handleLogin: (firstName: string, lastName: string) => void;

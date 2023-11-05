@@ -1,13 +1,11 @@
 import React from 'react';
 import {
     Container,
-    Stack,
     Box,
-    Heading,
     Text,
     Button,
     Image,
-    HStack,
+    Stack,
 } from '@chakra-ui/react';
 import { BsArrowLeft } from 'react-icons/bs';
 import logo from '../../assets/img/cpluse.png';

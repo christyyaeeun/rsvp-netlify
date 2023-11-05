@@ -1,6 +1,6 @@
-import React, { useState, useContext, FormEvent } from 'react';
+import React, { useState, FormEvent } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { Flex, Box, Input, FormLabel, Button } from '@chakra-ui/react';
+import { Flex, Input, FormLabel, Button } from '@chakra-ui/react';
 import Guest from '../types/Guest';
 
 const AddGuestForm: React.FC = () => {

@@ -1,9 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import { Button, Link, Image, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, DrawerFooter, Input, Flex, Box, Icon } from '@chakra-ui/react';
-import { IoIosMenu } from 'react-icons/io';
+import { Button, Link, Image, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerHeader, DrawerBody, DrawerFooter, Flex, Box, Icon } from '@chakra-ui/react';
 import { AiOutlineMenu } from 'react-icons/ai'
 import logo from '../assets/img/cpluse.png';
+
 const Nav = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const navigate = useNavigate();

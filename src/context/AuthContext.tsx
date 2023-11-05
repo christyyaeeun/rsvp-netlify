@@ -62,8 +62,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         const fetchGuestList = async () => {
             try {
                 // const response = await fetch('http://127.0.0.1:5000/api/guestList');
-                const response = await fetch('${BASE_URL}/api/guestList');
-
+                const response = await fetch(`${BASE_URL}/api/guestList`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

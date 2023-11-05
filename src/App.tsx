@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './style.css'
 import Landing from './components/Landing';
 import Rsvp from './components/Rsvp';
 import AdminDash from './components/AdminDash';
 import Schedule from './components/Schedule';
-import Guest from './types/Guest';
 import Error from './components/pages/Error';
 import About from './components/pages/About';
 

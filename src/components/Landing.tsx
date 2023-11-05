@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
 import LoginForm from './LoginForm';
-import { Flex, Box, Heading, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton, Tooltip } from '@chakra-ui/react';
+import { Flex, Box, Heading, Button, Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalCloseButton } from '@chakra-ui/react';
 import { Image, VStack, Text, ButtonGroup } from '@chakra-ui/react';
 import Details from './pages/Details';
 import Layout from './Layout';
@@ -10,10 +9,8 @@ import img from '../assets/img/herobg.png';
 import './style.css';
 import Guest from '../types/Guest';
 import { BASE_URL } from '../context/AuthContext';
-
 const Landing: React.FC = () => {
     const [guestList, setGuestList] = useState<Guest[]>([]);
-    const { login } = useAuth(); // Access the login function from the authentication context
     const [showModal, setShowModal] = useState(false);
     const [loginError, setLoginError] = useState(false);
 
@@ -23,8 +20,7 @@ const Landing: React.FC = () => {
         const fetchGuestList = async () => {
             try {
                 // const response = await fetch('http://127.0.0.1:5000/api/guestList');
-                const response = await fetch('${BASE_URL}/api/guestList');
-
+                const response = await fetch(`${BASE_URL}/api/guestList`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

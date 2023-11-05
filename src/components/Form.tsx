@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Flex, FormControl, Input, InputGroup, InputLeftAddon, Text, Stack, RadioGroup, Radio, Button, Tooltip } from '@chakra-ui/react';
+import { Flex, FormControl, Input, Text, Stack, RadioGroup, Radio, Button, Tooltip } from '@chakra-ui/react';
 import { BASE_URL } from '../context/AuthContext';
 
 interface FormProps {
@@ -24,7 +24,7 @@ const Form: React.FC<FormProps> = ({ onFormSubmit }) => {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch('${BASE_URL}/api/updateGuest', {
+            const response = await fetch(`${BASE_URL}/api/updateGuest`, {
                 // const response = await fetch('http://127.0.0.1:5000/api/updateGuest', {
                 method: 'POST',
                 headers: {

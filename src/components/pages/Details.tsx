@@ -1,4 +1,4 @@
-import { Flex, Box, VStack, Text, Heading, ButtonGroup, Button, Image } from '@chakra-ui/react';
+import { Flex, Box, VStack, Text, Heading, Image } from '@chakra-ui/react';
 import { UnorderedList, ListItem, Divider } from '@chakra-ui/react';
 import img from '../../assets/img/bg4.jpg';
 

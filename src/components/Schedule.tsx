@@ -1,4 +1,4 @@
-import { Box, Text, Heading, Flex, Button, Image, Link, UnorderedList, ListItem, VStack, Divider } from '@chakra-ui/react';
+import { Box, Text, Heading, Flex, UnorderedList, ListItem, VStack, Divider } from '@chakra-ui/react';
 import Nav from './Nav';
 
 const Schedule = () => {
