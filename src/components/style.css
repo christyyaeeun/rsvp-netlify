@@ -1,0 +1,27 @@
+h1.hero-heading {
+ font-family: 'Alef', sans-serif;
+ font-size: 55px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: -1px;
+ color: aliceblue;
+ text-align: start;
+ /* white-space: nowrap; */
+}
+
+h1.heading-h1 {
+ font-family: 'Neuton', serif;
+}
+/* @media screen and (max-width: 550px) {
+ h1.hero-heading {
+  font-size: 40px;
+ }
+} */
+
+@media screen and (max-width: 480px) {
+ h1.hero-heading {
+  font-size: 45px;
+  white-space: nowrap;
+  margin-bottom: 20px;
+ }
+}
