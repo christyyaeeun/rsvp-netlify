@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import Guest from '../types/Guest';
 
-export const BASE_URL = 'https://rsvp-flask-backend-69d9db094480.herokuapp.com/'
+export const BASE_URL = 'https://rsvp-flask-backend-69d9db094480.herokuapp.com'
 
 
 interface AuthContextProps {
